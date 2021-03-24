@@ -1,0 +1,13 @@
+.foods {
+    display: flex;
+
+    &__left {
+        width: 30%;
+    }
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
