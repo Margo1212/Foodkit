@@ -4,7 +4,7 @@
     align-items: center;
     padding: 20px 0 0 0;
 
-    &__list {
+    .main-menu {
         font-family: $mainFont;
         font-weight: 600;
         text-transform: capitalize;
@@ -16,25 +16,29 @@
         margin: 0;
         padding: 10px;
 
-        &__item {
+        .item {
             padding: 15px; 
-
-            &__link {
+    
+            .link {
                 text-decoration: none;
                 color: #000000;
             }
         }
+
+        
     }
 
-    &__submit {
+    
+
+    .btn-nav {
         font-family: $mainFont;
         font-weight: 600;
         text-transform: capitalize;
         line-height: 24px;
+        color: #F0735D;
         padding: 13px 25px 13px 25px;
         background-color: #ffffff;
-        border-radius: 50px 50px 50px 50px;
-        color: #F0735D;
+        border-radius: 50px;   
         border: 0.10rem solid  #F0735D;
         transition: all .5s;
     }  

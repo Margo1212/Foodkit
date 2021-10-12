@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build:sass": "sass --watch ./src/sass/style.scss:./src/css/style.css",
-    "watch:sass": "onchange -v ./src/sass/*.scss -- npm run build:scss",
+    
     "start": "browser-sync -s -w",
-    "watch:all": "npm-run-all --parallel start watch:sass"
+    "watch:all": "npm-run-all --parallel start build:sass"
   },
   "repository": {
     "type": "git",
