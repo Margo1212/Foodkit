@@ -28,62 +28,20 @@
         .social-group {
             margin: 50px 0 0 0;
 
-            .link {
-                color: $mainColor;
-                border: 1px solid $mainColor;
-                border-radius: 50%;
-                padding:  4px 7px;
-                margin: 7px;
-            }
+            @include social-media;
         }
     }
 
     .centered-col {
         width: 20%;
         
-        .list {
-            list-style-type: none;
-            text-transform: capitalize;
-            font-size: 17px;
-
-            .title {
-                color: $mainColor;
-                font-weight: 600;
-            }
-
-            li {
-                margin: 0 0 30px 0;
-
-                .item {
-                    text-decoration: none;
-                    color: $secondColor;                     
-                }
-            }
-        }
+        @include list-style;
     }
 
     .left-col {
         width: 20%;
         
-        .list {
-            list-style-type: none;
-            text-transform: capitalize;
-            font-size: 17px;
-
-            .title {
-                color: $mainColor;
-                font-weight: 600;
-            }
-
-            li {
-                margin: 0 0 30px 0;
-
-                .item {
-                    text-decoration: none;
-                    color: $secondColor;                     
-                }
-            }
-        }
+        @include list-style;
     }
     
     .footer-img {

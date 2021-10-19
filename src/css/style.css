@@ -36,19 +36,24 @@
   margin-bottom: 2rem;
   line-height: 1.5rem;
 }
-.heading .right .container .btn-header {
+.heading .right .container .btn {
+  padding: 15px 30px 15px 30px;
+}
+.heading .right .container .btn {
   font-weight: 600;
-  padding: 14px 30px 15px 30px;
   background-color: #F0735D;
+  border: none;
+  cursor: pointer;
+  outline: none;
   border-radius: 50px;
   color: #fff;
   transition: 0.5s ease-in-out;
 }
-.heading .right .container .btn-header:hover {
+.heading .right .container .btn:hover {
   background-color: #fff;
   color: #F0735D;
-  border: 0.05rem solid #F0735D;
-  transform: scale(1);
+  border: 2px solid #F0735D;
+  transform: scale(2px);
 }
 .heading .social-group {
   position: absolute;
@@ -61,6 +66,11 @@
   border-radius: 50%;
   padding: 4px 7px;
   margin: 7px;
+  transition: 0.2s ease-in-out;
+}
+.heading .social-group .link:hover {
+  color: #fff;
+  background-color: #000000;
 }
 
 .navigation {
@@ -88,17 +98,21 @@
   text-decoration: none;
   color: #000000;
 }
-.navigation .btn-nav {
+.navigation .btn {
+  padding: 13px 25px 13px 25px;
+  text-transform: capitalize;
+}
+.navigation .btn {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  text-transform: capitalize;
-  line-height: 24px;
-  color: #F0735D;
-  padding: 13px 25px 13px 25px;
   background-color: #fff;
   border-radius: 50px;
-  border: 0.1rem solid #F0735D;
+  color: #F0735D;
+  border: 2px solid #F0735D;
   transition: all 0.5s;
+}
+.navigation .btn:hover {
+  transform: scale(1.1);
 }
 
 .foods {
@@ -166,6 +180,7 @@
   color: #F0735D;
   display: inline-block;
   margin: 0;
+  font-weight: 700;
 }
 .foods .right .item .stars {
   width: 90px;
@@ -175,7 +190,7 @@
 }
 
 .our_story {
-  height: 100vh;
+  height: 85vh;
   display: flex;
 }
 .our_story .left {
@@ -212,26 +227,26 @@
   color: #000000;
   margin: 0 31px 0 0;
 }
-.our_story .right .story-wrapper .story-btn {
+.our_story .right .story-wrapper .btn {
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  line-height: 24px;
-  padding: 14px 30px 15px 30px;
-  background-color: #F0735D;
-  border-radius: 50px;
-  color: #fff;
-  border: 0.05rem solid #fff;
-  transition: all 0.5s;
+  padding: 14px 25px 14px 25px;
   margin: 50px 0 0 0;
 }
-.our_story .right .story-wrapper .story-btn:hover {
+.our_story .right .story-wrapper .btn {
+  font-weight: 600;
+  background-color: #F0735D;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50px;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+.our_story .right .story-wrapper .btn:hover {
   background-color: #fff;
   color: #F0735D;
-  border: 0.05rem solid #F0735D;
-  transform: scale(1.1);
-}
-.our_story .right .story-wrapper .story-btn:focus {
-  border: 0;
+  border: 2px solid #F0735D;
+  transform: scale(2px);
 }
 
 .our-recipes {
@@ -275,7 +290,7 @@
 }
 .our-recipes .recipes-wrapper .item .price {
   color: #F0735D;
-  display: inline;
+  display: inline-block;
   margin: 0;
   font-weight: 700;
 }
@@ -285,44 +300,44 @@
   top: 20rem;
   left: 3.5rem;
 }
-.our-recipes .recipes-wrapper .item .recipe-btn {
+.our-recipes .recipes-wrapper .item .btn {
   display: block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
   font-size: 12px;
   text-transform: capitalize;
-  line-height: 24px;
   padding: 9px 21px;
-  background-color: #F0735D;
-  border-radius: 50px;
-  color: #fff;
-  border: 0.5rem solid #fff;
-  transition: all 0.5s;
   margin: 20px 0 0 0;
 }
-.our-recipes .recipes-wrapper .item .recipe-btn:hover {
+.our-recipes .recipes-wrapper .item .btn {
+  font-weight: 600;
+  background-color: #F0735D;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50px;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+.our-recipes .recipes-wrapper .item .btn:hover {
   background-color: #fff;
   color: #F0735D;
-  border: 0.05rem solid #F0735D;
+  border: 2px solid #F0735D;
+  transform: scale(2px);
 }
-.our-recipes .recipes-wrapper .item .recipe-btn:focus {
-  border: 0;
+.our-recipes .btn {
+  padding: 15px 30px;
+  font-size: 16px;
+  margin: 60px 0 20px 0;
 }
-.our-recipes .load-btn {
-  display: block;
+.our-recipes .btn {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  padding: 15px 30px;
   background-color: #fff;
   border-radius: 50px;
   color: #F0735D;
   border: 2px solid #F0735D;
   transition: all 0.5s;
-  margin: 60px 0 20px 0;
 }
-.our-recipes .load-btn:hover {
+.our-recipes .btn:hover {
   transform: scale(1.1);
 }
 
@@ -409,6 +424,11 @@
   border-radius: 50%;
   padding: 4px 7px;
   margin: 7px;
+  transition: 0.2s ease-in-out;
+}
+.footer .right-col .social-group .link:hover {
+  color: #fff;
+  background-color: #000000;
 }
 .footer .centered-col {
   width: 20%;

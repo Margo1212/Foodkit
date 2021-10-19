@@ -1,7 +1,8 @@
-@import "parts/_variables";
-@import "parts/_heading.scss";
-@import "parts/_navigation.scss";
-@import "parts/_foods.scss";
+@import "_variables";
+@import "_mixins";
+@import "parts/_heading";
+@import "parts/_navigation";
+@import "parts/_foods";
 @import "parts/_our_story";
 @import "parts/_our_recipes";
 @import "parts/_review";

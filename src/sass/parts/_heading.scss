@@ -40,22 +40,11 @@
                 line-height: 1.5rem;
             }
 
-            .btn-header {
-                font-weight: 600;
-                padding: 14px 30px 15px 30px;
-                background-color: $thirdColor;
-                border-radius: 50px;
-                color: $lightColor;
-                transition: .5s ease-in-out;
-
-                &:hover {
-                    background-color: $lightColor;
-                    color: $thirdColor;
-                    border: 0.05rem solid $thirdColor;
-                    transform: scale(1) ;
-                }
-
+            .btn {
+                padding: 15px 30px 15px 30px;
             }
+            
+            @include buttons;
         }
     }
 
@@ -64,13 +53,7 @@
         bottom: 13rem;
         right: 18%;
 
-        .link {
-            color: $mainColor;
-            border: 1px solid $mainColor;
-            border-radius: 50%;
-            padding:  4px 7px;
-            margin: 7px;
-        }
+        @include social-media;
     }
 }
 

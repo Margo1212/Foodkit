@@ -65,13 +65,8 @@
                     font-weight: 700;
                     margin: 10px 0 10px 0
                 }
-    
-                .price {
-                    color: $thirdColor;
-                    display: inline-block;
-                    margin: 0;
-                
-                }
+
+                @include price;
     
                 .stars {
                   width: 90px;

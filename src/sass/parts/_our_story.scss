@@ -1,5 +1,5 @@
 .our_story {
-    height: 100vh;
+    height: 85vh;
     display: flex;
 
     .left {
@@ -40,29 +40,13 @@
                 margin: 0 31px 0 0;
             }
 
-            .story-btn {
+            .btn {
                 font-family: $mainFont;
-                font-weight: 600;
-                line-height: 24px;
-                padding: 14px 30px 15px 30px;
-                background-color: $thirdColor;
-                border-radius: 50px;
-                color: $lightColor;
-                border: 0.05rem solid $lightColor;
-                transition: all .5s;
+                padding: 14px 25px 14px 25px;
                 margin: 50px 0 0 0;
-
-                &:hover {
-                    background-color: $lightColor;
-                    color: $thirdColor;
-                    border: 0.05rem solid $thirdColor;
-                    transform: scale(1.1);
-                }
-
-                &:focus {
-                    border: 0;
-                }
             }
+
+            @include buttons;
         }        
     }
 }

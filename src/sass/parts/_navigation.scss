@@ -26,16 +26,10 @@
         }        
     }
 
-    .btn-nav {
-        font-family: $mainFont;
-        font-weight: 600;
-        text-transform: capitalize;
-        line-height: 24px;
-        color: $thirdColor;
+    .btn {
         padding: 13px 25px 13px 25px;
-        background-color: $lightColor;
-        border-radius: 50px;   
-        border: 0.10rem solid  $thirdColor;
-        transition: all .5s;
+        text-transform: capitalize;
     }  
+
+    @include light-button;
 }
