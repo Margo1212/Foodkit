@@ -36,7 +36,7 @@
                 font-weight: 400;
                 line-height: 34px;
                 letter-spacing: 0.6px;
-                color: #393e64;
+                color: $mainColor;
                 margin: 0 31px 0 0;
             }
 
@@ -45,17 +45,17 @@
                 font-weight: 600;
                 line-height: 24px;
                 padding: 14px 30px 15px 30px;
-                background-color: #F0735D;
+                background-color: $thirdColor;
                 border-radius: 50px;
-                color: #fff;
-                border: 0.05rem solid #fff;
+                color: $lightColor;
+                border: 0.05rem solid $lightColor;
                 transition: all .5s;
                 margin: 50px 0 0 0;
 
                 &:hover {
-                    background-color: #fff;
-                    color: #F0735D;
-                    border: 0.05rem solid #F0735D;
+                    background-color: $lightColor;
+                    color: $thirdColor;
+                    border: 0.05rem solid $thirdColor;
                     transform: scale(1.1);
                 }
 

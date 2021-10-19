@@ -10,7 +10,7 @@
     font-weight: 700;
     font-family: $mainFont;
     text-transform: capitalize;
-    color: #F0735D;
+    color: $thirdColor;
     margin: 0 0 16px 0;                
     }
 
@@ -42,7 +42,7 @@
             }
             
             .price {
-                color: #F0735D;
+                color: $thirdColor;
                 display: inline;
                 margin: 0;
                 font-weight: 700;            
@@ -63,17 +63,17 @@
                 text-transform: capitalize;
                 line-height: 24px;
                 padding: 9px 21px;
-                background-color: #F0735D;
+                background-color: $thirdColor;
                 border-radius: 50px;
-                color: #fff;
-                border: 0.5rem solid #fff;
+                color: $lightColor;
+                border: 0.5rem solid $lightColor;
                 transition: all .5s;
                 margin: 20px 0 0 0;
     
                 &:hover {
-                    background-color: #fff;
-                    color: #F0735D;
-                    border: 0.05rem solid #F0735D;
+                    background-color: $lightColor;
+                    color: $thirdColor;
+                    border: 0.05rem solid $thirdColor;
                 }
     
                 &:focus {
@@ -91,10 +91,10 @@
         font-size: 16px;
         line-height: 24px;
         padding: 15px 30px;
-        background-color: #fff;
+        background-color: $lightColor;
         border-radius: 50px;
-        color: #F0735D;
-        border: 2px solid #F0735D;
+        color: $thirdColor;
+        border: 2px solid $thirdColor;
         transition: all .5s;
         margin: 60px 0 20px 0;
 

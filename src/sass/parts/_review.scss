@@ -1,17 +1,18 @@
 .review {
+    height: 85vh;
     display: flex;
     position: relative;
-
+    
     .review-wrapper {
         width: 50%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: column;      
         padding: 0 0 0 130px;
+        justify-content: center;
         
         .review-desc {
             width: 95%;
-            color: #393e64;
+            color: $mainColor;
             font-size: 15px;
             font-weight: 600;
             line-height: 34px;
@@ -38,7 +39,7 @@
             }
 
             .desc {
-                color: #808398;
+                color: $secondColor;
                 font-size: 13px;
                 text-transform: capitalize;
                 font-weight: 400;
@@ -52,7 +53,7 @@
 
     .salad {
         position: absolute;
-        top: 20rem;
+        bottom: -9rem;
         left: -7.8rem;
     }
 }

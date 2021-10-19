@@ -14,7 +14,7 @@
                 font-weight: 700;
                 font-family: $mainFont;
                 text-transform: capitalize;
-                color: #F0735D;
+                color: $thirdColor;
                 margin: 0 0 16px 0;                
             }
         
@@ -67,7 +67,7 @@
                 }
     
                 .price {
-                    color: #F0735D;
+                    color: $thirdColor;
                     display: inline-block;
                     margin: 0;
                 
