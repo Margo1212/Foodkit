@@ -1,0 +1,105 @@
+.our-recipes {
+    height: 150vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+   .desc {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: $mainFont;
+    text-transform: capitalize;
+    color: #F0735D;
+    margin: 0 0 16px 0;                
+    }
+
+    .title {
+        font-size: 50px;
+        font-weight: 600;
+        text-transform: capitalize;
+        font-family: $secondFont;
+        margin: 10px 0 70px 0;
+        height: auto;
+    }
+
+   .recipes-wrapper {
+       display: flex;
+       flex-direction: row;
+
+       .item {
+            margin: 30px;
+            position: relative;
+           
+            .recipes-img {
+               width: 20rem;
+            }
+
+            .recipes-description {
+                font-weight: 700;
+                font-size: 22px;
+                text-transform: capitalize;
+            }
+            
+            .price {
+                color: #F0735D;
+                display: inline;
+                margin: 0;
+                font-weight: 700;            
+            }
+
+            .stars {
+              width: 90px;
+              position: absolute;
+              top: 20rem;
+              left: 3.5rem;
+            }
+
+            .recipe-btn {
+                display: block;
+                font-family: $mainFont;
+                font-weight: 600;
+                font-size: 12px;
+                text-transform: capitalize;
+                line-height: 24px;
+                padding: 9px 21px;
+                background-color: #F0735D;
+                border-radius: 50px;
+                color: #fff;
+                border: 0.5rem solid #fff;
+                transition: all .5s;
+                margin: 20px 0 0 0;
+    
+                &:hover {
+                    background-color: #fff;
+                    color: #F0735D;
+                    border: 0.05rem solid #F0735D;
+                }
+    
+                &:focus {
+                    border: 0;
+                }
+                    
+            }            
+        }
+    }
+
+    .load-btn {
+        display: block;
+        font-family: $mainFont;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 15px 30px;
+        background-color: #fff;
+        border-radius: 50px;
+        color: #F0735D;
+        border: 2px solid #F0735D;
+        transition: all .5s;
+        margin: 60px 0 20px 0;
+
+        &:hover {
+            transform: scale(1.1);
+        }   
+    }   
+}

@@ -1,0 +1,58 @@
+.review {
+    display: flex;
+    position: relative;
+
+    .review-wrapper {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0 0 130px;
+        
+        .review-desc {
+            width: 95%;
+            color: #393e64;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 34px;
+            letter-spacing: 0.4px;
+        }     
+        
+        .caption {
+            display: flex;
+            margin: 10px 0 0 0;
+            
+
+            .woman {
+                width: 78px;
+                height: 78px;
+                margin: 0 20px 0 0;
+            }
+
+            .name {
+                font-weight: 700;
+                font-size: 17px;
+                text-transform: capitalize;
+                margin: 15px 0 8px 0;
+                
+            }
+
+            .desc {
+                color: #808398;
+                font-size: 13px;
+                text-transform: capitalize;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .breakfast {
+        width: 50%;
+    }
+
+    .salad {
+        position: absolute;
+        top: 20rem;
+        left: -7.8rem;
+    }
+}
