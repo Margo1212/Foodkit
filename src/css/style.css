@@ -13,6 +13,11 @@
   top: 12rem;
   left: 10rem;
 }
+@media screen and (max-width: 480px) {
+  .heading .left {
+    display: none;
+  }
+}
 .heading .right {
   width: 50%;
   padding: 2rem;
@@ -26,8 +31,13 @@
   width: 80%;
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  font-size: 4.37rem;
+  font-size: 4.37em;
   text-transform: capitalize;
+}
+@media screen and (max-width: 480px) {
+  .heading .right .container .main-title {
+    font-size: 3rem;
+  }
 }
 .heading .right .container .sub {
   width: 80%;
@@ -55,6 +65,16 @@
   border: 2px solid #F0735D;
   transform: scale(2px);
 }
+@media screen and (max-width: 480px) {
+  .heading .right .container {
+    top: 5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .heading .right {
+    width: 100%;
+  }
+}
 .heading .social-group {
   position: absolute;
   bottom: 13rem;
@@ -72,7 +92,18 @@
   color: #fff;
   background-color: #000000;
 }
+@media screen and (max-width: 480px) {
+  .heading .social-group {
+    bottom: 10%;
+    left: 9%;
+  }
+}
 
+@media screen and (max-width: 480px) {
+  .heading {
+    height: 90vh;
+  }
+}
 .navigation {
   display: flex;
   justify-content: space-around;
