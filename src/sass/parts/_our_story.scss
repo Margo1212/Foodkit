@@ -13,6 +13,18 @@
         }
     }
 
+    @media screen and (max-width: 480px) {
+        .left {
+            width: 100%;
+
+            .story-img {
+                width: 60%;
+                top: 10px;
+                left: 10px;
+            }
+        }
+    }
+
     .right {
         width: 50%;
         padding: 0 6rem 0 0;
@@ -47,6 +59,27 @@
             }
 
             @include buttons;
-        }        
+        }
+        
+        @media screen and (max-width: 480px) {
+            .story-wrapper {
+                top: 12rem;
+                width: 90%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .right {
+            width: 100%;
+            margin: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .our_story {
+        height: 100vh;
+        flex-direction: column;
     }
 }

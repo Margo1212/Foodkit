@@ -280,6 +280,16 @@
   top: 5rem;
   left: 9rem;
 }
+@media screen and (max-width: 480px) {
+  .our_story .left {
+    width: 100%;
+  }
+  .our_story .left .story-img {
+    width: 60%;
+    top: 10px;
+    left: 10px;
+  }
+}
 .our_story .right {
   width: 50%;
   padding: 0 6rem 0 0;
@@ -326,7 +336,25 @@
   border: 2px solid #F0735D;
   transform: scale(2px);
 }
+@media screen and (max-width: 480px) {
+  .our_story .right .story-wrapper {
+    top: 12rem;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .our_story .right {
+    width: 100%;
+    margin: 20px;
+  }
+}
 
+@media screen and (max-width: 480px) {
+  .our_story {
+    height: 100vh;
+    flex-direction: column;
+  }
+}
 .our-recipes {
   height: 150vh;
   display: flex;
