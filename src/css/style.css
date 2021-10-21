@@ -133,6 +133,14 @@
   padding: 13px 25px 13px 25px;
   text-transform: capitalize;
 }
+@media screen and (max-width: 480px) {
+  .navigation .main-menu {
+    display: none;
+  }
+  .navigation .btn {
+    display: none;
+  }
+}
 .navigation .btn {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -146,6 +154,12 @@
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 480px) {
+  .navigation {
+    justify-content: start;
+    margin: 0 0 0 30px;
+  }
+}
 .foods {
   height: 90vh;
   margin: 0 100px 100px 200px;
