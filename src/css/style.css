@@ -54,16 +54,14 @@
   background-color: #F0735D;
   border: none;
   cursor: pointer;
-  outline: none;
   border-radius: 50px;
   color: #fff;
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .heading .right .container .btn:hover {
   background-color: #fff;
   color: #F0735D;
-  border: 2px solid #F0735D;
-  transform: scale(2px);
+  outline: 1px solid #F0735D;
 }
 @media screen and (max-width: 480px) {
   .heading .right .container {
@@ -148,7 +146,7 @@
   border-radius: 50px;
   color: #F0735D;
   border: 2px solid #F0735D;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 .navigation .btn:hover {
   transform: scale(1.1);
@@ -325,16 +323,14 @@
   background-color: #F0735D;
   border: none;
   cursor: pointer;
-  outline: none;
   border-radius: 50px;
   color: #fff;
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .our_story .right .story-wrapper .btn:hover {
   background-color: #fff;
   color: #F0735D;
-  border: 2px solid #F0735D;
-  transform: scale(2px);
+  outline: 1px solid #F0735D;
 }
 @media screen and (max-width: 480px) {
   .our_story .right .story-wrapper {
@@ -440,16 +436,14 @@
   background-color: #F0735D;
   border: none;
   cursor: pointer;
-  outline: none;
   border-radius: 50px;
   color: #fff;
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .our-recipes .recipes-wrapper .item .btn:hover {
   background-color: #fff;
   color: #F0735D;
-  border: 2px solid #F0735D;
-  transform: scale(2px);
+  outline: 1px solid #F0735D;
 }
 @media screen and (max-width: 480px) {
   .our-recipes .recipes-wrapper {
@@ -468,7 +462,7 @@
   border-radius: 50px;
   color: #F0735D;
   border: 2px solid #F0735D;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 .our-recipes .btn:hover {
   transform: scale(1.1);

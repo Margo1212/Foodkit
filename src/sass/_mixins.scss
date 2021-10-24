@@ -42,16 +42,14 @@
         background-color: $thirdColor;
         border: none;
         cursor: pointer;
-        outline: none;
         border-radius: 50px;
         color: $lightColor;
-        transition: .5s ease-in-out;
+        transition: all .5s ease-in-out;
 
         &:hover {
             background-color: $lightColor;
             color: $thirdColor;
-            border: 2px solid $thirdColor;
-            transform: scale(2px);
+            outline: 1px solid $thirdColor;
         }
     }
 }
@@ -73,7 +71,7 @@
         border-radius: 50px;
         color: $thirdColor;
         border: 2px solid $thirdColor;
-        transition: all .5s;
+        transition: all .5s ease-in-out;
         
 
         &:hover {
