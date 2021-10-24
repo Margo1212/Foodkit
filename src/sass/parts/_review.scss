@@ -17,25 +17,34 @@
             font-weight: 600;
             line-height: 34px;
             letter-spacing: 0.4px;
-        }     
+        }
+        
+        @media screen and (max-width: 480px) {
+            .review-desc {
+                width: 100%;
+            }
+        }
         
         .caption {
             display: flex;
             margin: 10px 0 0 0;
-            
-
+            z-index: 1;
+        
             .woman {
                 width: 78px;
                 height: 78px;
                 margin: 0 20px 0 0;
             }
 
+            @media screen and (max-width: 480px) {
+                
+            }
+
             .name {
                 font-weight: 700;
                 font-size: 17px;
                 text-transform: capitalize;
-                margin: 15px 0 8px 0;
-                
+                margin: 15px 0 8px 0;                
             }
 
             .desc {
@@ -45,15 +54,37 @@
                 font-weight: 400;
             }
         }
+        
+        
+    }
+
+    @media screen and (max-width: 480px) {
+        .review-wrapper {
+            width: 100%;
+            padding: 0 30px;
+            align-items: start;
+        }
     }
 
     .breakfast {
-        width: 50%;
+        width: 600px;
+    }
+
+    @media screen and (max-width: 480px) {
+        .breakfast {
+            display: none;
+        }
     }
 
     .salad {
         position: absolute;
         bottom: -9rem;
         left: -7.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .review {
+       height: 50vh;
     }
 }

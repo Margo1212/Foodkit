@@ -370,6 +370,11 @@
   color: #F0735D;
   margin: 0 0 16px 0;
 }
+@media screen and (max-width: 480px) {
+  .our-recipes .desc {
+    padding: 0;
+  }
+}
 .our-recipes .title {
   font-size: 50px;
   font-weight: 600;
@@ -377,6 +382,13 @@
   font-family: "Playfair Display", serif;
   margin: 10px 0 70px 0;
   height: auto;
+}
+@media screen and (max-width: 480px) {
+  .our-recipes .title {
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+  }
 }
 .our-recipes .recipes-wrapper {
   display: flex;
@@ -388,6 +400,11 @@
 }
 .our-recipes .recipes-wrapper .item .recipes-img {
   width: 20rem;
+}
+@media screen and (max-width: 480px) {
+  .our-recipes .recipes-wrapper .item .recipes-img {
+    width: 90%;
+  }
 }
 .our-recipes .recipes-wrapper .item .recipes-description {
   font-weight: 700;
@@ -405,6 +422,11 @@
   position: absolute;
   top: 20rem;
   left: 3.5rem;
+}
+@media screen and (max-width: 480px) {
+  .our-recipes .recipes-wrapper .item .stars {
+    display: none;
+  }
 }
 .our-recipes .recipes-wrapper .item .btn {
   display: block;
@@ -429,6 +451,11 @@
   border: 2px solid #F0735D;
   transform: scale(2px);
 }
+@media screen and (max-width: 480px) {
+  .our-recipes .recipes-wrapper {
+    flex-direction: column;
+  }
+}
 .our-recipes .btn {
   padding: 15px 30px;
   font-size: 16px;
@@ -447,6 +474,12 @@
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 480px) {
+  .our-recipes {
+    height: 210vh;
+    margin: 100px 0 0 0;
+  }
+}
 .review {
   height: 85vh;
   display: flex;
@@ -467,9 +500,15 @@
   line-height: 34px;
   letter-spacing: 0.4px;
 }
+@media screen and (max-width: 480px) {
+  .review .review-wrapper .review-desc {
+    width: 100%;
+  }
+}
 .review .review-wrapper .caption {
   display: flex;
   margin: 10px 0 0 0;
+  z-index: 1;
 }
 .review .review-wrapper .caption .woman {
   width: 78px;
@@ -488,8 +527,20 @@
   text-transform: capitalize;
   font-weight: 400;
 }
+@media screen and (max-width: 480px) {
+  .review .review-wrapper {
+    width: 100%;
+    padding: 0 30px;
+    align-items: start;
+  }
+}
 .review .breakfast {
-  width: 50%;
+  width: 600px;
+}
+@media screen and (max-width: 480px) {
+  .review .breakfast {
+    display: none;
+  }
 }
 .review .salad {
   position: absolute;
@@ -497,6 +548,11 @@
   left: -7.8rem;
 }
 
+@media screen and (max-width: 480px) {
+  .review {
+    height: 50vh;
+  }
+}
 .footer {
   width: 100%;
   height: 60vh;
@@ -536,40 +592,26 @@
   color: #fff;
   background-color: #000000;
 }
-.footer .centered-col {
-  width: 20%;
-}
-.footer .centered-col .list {
-  list-style-type: none;
-  text-transform: capitalize;
-  font-size: 17px;
-}
-.footer .centered-col .list .title {
-  color: #000000;
-  font-weight: 600;
-}
-.footer .centered-col .list li {
-  margin: 0 0 30px 0;
-}
-.footer .centered-col .list li .item {
-  text-decoration: none;
-  color: #808398;
-}
+.footer .centered-col,
 .footer .left-col {
   width: 20%;
 }
+.footer .centered-col .list,
 .footer .left-col .list {
   list-style-type: none;
   text-transform: capitalize;
   font-size: 17px;
 }
+.footer .centered-col .list .title,
 .footer .left-col .list .title {
   color: #000000;
   font-weight: 600;
 }
+.footer .centered-col .list li,
 .footer .left-col .list li {
   margin: 0 0 30px 0;
 }
+.footer .centered-col .list li .item,
 .footer .left-col .list li .item {
   text-decoration: none;
   color: #808398;
@@ -578,6 +620,35 @@
   position: absolute;
   right: -11rem;
   bottom: -10.5rem;
+}
+@media screen and (max-width: 480px) {
+  .footer .right-col,
+.footer .centered-col,
+.footer .left-col {
+    width: 100%;
+  }
+  .footer .right-col .wrapper {
+    width: 80%;
+    padding: 20px 10px;
+  }
+  .footer .centered-col .list .list-wrapper,
+.footer .left-col .list .list-wrapper {
+    display: flex;
+  }
+  .footer .centered-col .list .list-wrapper .item,
+.footer .left-col .list .list-wrapper .item {
+    margin: 0 25px 0 0;
+  }
+  .footer .footer-img {
+    bottom: -15rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    height: 80vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

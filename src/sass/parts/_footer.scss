@@ -32,21 +32,55 @@
         }
     }
 
-    .centered-col {
-        width: 20%;
-        
-        @include list-style;
-    }
-
+    .centered-col,
     .left-col {
         width: 20%;
         
         @include list-style;
     }
-    
+
     .footer-img {
         position: absolute;
         right: -11rem;
         bottom: -10.5rem;   
-    }    
+    }
+    
+    @media screen and (max-width: 480px) {
+        .right-col,
+        .centered-col,
+        .left-col {
+            width: 100%;
+        }
+
+        .right-col {
+            .wrapper {
+                width: 80%;
+                padding: 20px 10px;
+            }
+        }
+
+        .centered-col,
+        .left-col {
+            .list {
+               .list-wrapper {
+                   display: flex;
+
+                   .item {
+                       margin: 0 25px 0 0;
+                   }
+               }
+            }
+        }
+
+        .footer-img {
+            bottom: -15rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+       flex-direction: column;
+       height: 80vh;
+    }
 }
