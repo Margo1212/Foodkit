@@ -1,81 +1,80 @@
 @mixin list-style {
-    .list {
-        list-style-type: none;
-        text-transform: capitalize;
-        font-size: 17px;
+  .list {
+    list-style-type: none;
+    text-transform: capitalize;
+    font-size: 17px;
 
-        .title {
-            color: $mainColor;
-            font-weight: 600;
-        }
-
-        li {
-            margin: 0 0 30px 0;
-
-            .item {
-                text-decoration: none;
-                color: $secondColor;                     
-            }
-        }
+    .title {
+      color: red;
+      font-weight: 600;
     }
+
+    li {
+      margin: 0 0 30px 0;
+
+      .item {
+        text-decoration: none;
+        color: $secondColor;
+      }
+    }
+  }
 }
 
 @mixin social-media {
-    .link {
-        color: $mainColor;
-        border: 1px solid $mainColor;
-        border-radius: 50%;
-        padding:  4px 7px;
-        margin: 7px;
-        transition: .2s ease-in-out;
+  .link {
+    color: $mainColor;
+    border: 1px solid $mainColor;
+    border-radius: 50%;
+    padding: 4px 7px;
+    margin: 7px;
+    transition: 0.2s ease-in-out;
 
-        &:hover {
-            color: $lightColor;
-            background-color: $mainColor;
-        }
+    &:hover {
+      color: $lightColor;
+      background-color: $mainColor;
     }
+  }
 }
 
 @mixin buttons {
-    .btn {
-        font-weight: 600;
-        background-color: $thirdColor;
-        border: none;
-        cursor: pointer;
-        border-radius: 50px;
-        color: $lightColor;
-        transition: all .5s ease-in-out;
+  .btn {
+    font-weight: 600;
+    background-color: $thirdColor;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    color: $lightColor;
+    transition: all 0.5s ease-in-out;
 
-        &:hover {
-            background-color: $lightColor;
-            color: $thirdColor;
-            outline: 1px solid $thirdColor;
-        }
+    &:hover {
+      background-color: $lightColor;
+      color: $thirdColor;
+      outline: 1px solid $thirdColor;
     }
+  }
 }
 
 @mixin price {
-    .price {
-        color: $thirdColor;
-        display: inline-block;
-        margin: 0;
-        font-weight: 700;
-    }
+  .price {
+    color: $thirdColor;
+    display: inline-block;
+    margin: 0;
+    font-weight: 700;
+  }
 }
 
 @mixin light-button {
-    .btn {
-        font-family: $mainFont;
-        font-weight: 600;             
-        background-color: $lightColor;
-        border-radius: 50px;
-        color: $thirdColor;
-        border: 2px solid $thirdColor;
-        transition: all .5s ease-in-out;
-        
+  .btn {
+    font-family: $mainFont;
+    font-weight: 600;
+    background-color: $lightColor;
+    border-radius: 50px;
+    color: $thirdColor;
+    border: 2px solid $thirdColor;
+    transition: all 0.5s ease-in-out;
 
-        &:hover {
-            transform: scale(1.1);
-        }
+    &:hover {
+      transform: scale(1.1);
     }
+  }
 }
